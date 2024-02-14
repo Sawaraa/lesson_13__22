@@ -1,12 +1,8 @@
 package deputies;
 
 import faction.Faction;
-import faction.Function;
 import supremeCouncil.Parliament;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {

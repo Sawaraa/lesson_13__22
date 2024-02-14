@@ -4,16 +4,12 @@ import faction.Faction;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Parliament {
 
     public static Parliament parliament = new Parliament();
 
     private ArrayList<Faction> listOfFactions = new ArrayList<>();
-
-    Faction faction1 = new Faction();
 
     {
         Faction faction = new Faction("Foo");
@@ -51,7 +47,8 @@ public class Parliament {
 
     public void clear(String outputName){
 
-        listOfFactions.stream().filter(faction -> faction.getName().equalsIgnoreCase(outputName))
+        listOfFactions.stream()
+                .filter(faction -> faction.getName().equalsIgnoreCase(outputName))
                 .forEach(Faction::clearDeputies);
     }
 

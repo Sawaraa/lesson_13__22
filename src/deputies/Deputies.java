@@ -1,6 +1,5 @@
 package deputies;
 
-import faction.Faction;
 
 import static java.lang.Integer.compare;
 
